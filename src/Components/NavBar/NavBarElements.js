@@ -7,7 +7,6 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
   /* Third Nav */
   /* justify-content: flex-start; */
@@ -22,7 +21,10 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    text-decoration: bold;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  &:hover {
     text-decoration: underline;
   }
 `;
@@ -44,7 +46,6 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
   /* Second Nav */
   /* margin-right: 24px; */
   /* Third Nav */

@@ -1,10 +1,10 @@
 import React from 'react';
-import NavBar from './Components/NavBar';
+import NavBar from './components/NavBar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './pages';
-import Projects from './pages/Projects';
-import Stories from './pages/Stories';
-import About from './pages/About';
+import Home from './pages/Shard';
+import Projects from './pages/Shard/Projects';
+import Stories from './pages/Shard/Stories';
+import About from './pages/Shard/About';
 
 function App() {
   return (
@@ -12,10 +12,10 @@ function App() {
       <Router>
         <NavBar/>
         <Switch>
-          <Route path='/' exact components={Home}/>
-          <Route path='/projects' exact components={Projects}/>
-          <Route path='/stories' exact components={Stories}/>
-          <Route path='/about' exact components={About}/>
+          <Route path='/shard/' exact component={Home}/>
+          <Route path='/shard/projects' exact component={Projects}/>
+          <Route path='/shard/stories' exact component={Stories}/>
+          <Route path='/shard/about' exact component={About}/>
         </Switch>
       </Router>
     </div>
