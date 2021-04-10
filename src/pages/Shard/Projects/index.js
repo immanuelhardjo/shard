@@ -1,39 +1,77 @@
-import React, { Component } from 'react'
-var ReactDOM = require('react-dom');
-var Carousel = require('react-responsive-carousel').Carousel;
+import React, { Component } from "react";
+import Slider from "react-slick";
 
-export class index extends Component {
-    render() {
-        return (
-            <Carousel>
-                <div>
-                    {/* <img src="assets/1.jpeg" /> */}
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    {/* <img src="assets/2.jpeg" /> */}
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    {/* <img src="assets/3.jpeg" /> */}
-                    <p className="legend">Legend 3</p>
-                </div>
-                <div>
-                    {/* <img src="assets/4.jpeg" /> */}
-                    <p className="legend">Legend 4</p>
-                </div>
-                <div>
-                    {/* <img src="assets/5.jpeg" /> */}
-                    <p className="legend">Legend 5</p>
-                </div>
-                <div>
-                    {/* <img src="assets/6.jpeg" /> */}
-                    <p className="legend">Legend 6</p>
-                </div>
-            </Carousel>
-        );
-    }
-};
-
-export default index
-// ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
+export default class SimpleSlider extends Component {
+  render() {
+    var settings = {
+      dots: true,
+      className: "center",
+      centerMode: true,
+      infinite: true,
+      centerPadding: "60px",
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      appendDots: dots => (
+        <div
+          style={{
+            backgroundColor: "white",
+            borderRadius: "10px",
+          }}
+        >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+        </div>
+      ),
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+    return (
+      <div>
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
+      </div>
+    );
+  }
+}

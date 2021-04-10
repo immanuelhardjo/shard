@@ -7,7 +7,7 @@ const index = () => {
     return (
         <div className ='container'>
             <div className='background'>
-                <Particles height="100%" width="100%" params={{
+                <Particles width="100%" height="100vh" params={{
                     "particles": {
                         "number": {
                             "value": 50
@@ -27,14 +27,10 @@ const index = () => {
                 }}/>
             </div>
             <div className = 'home-container'>                
-                <div className = 'home-logo'>
-                    <img src={logo} alt="Logo" height="87" width="100"/>
-                    <div className = 'home-logo-text'>Shard</div>
-                </div>
-
+                <img className = 'home-logo' src={logo} alt="Logo"/>
                 <div className = 'home-description'>
                     <b>Hi there, I'm Hardjo.</b>
-                    <br/>I am an Electrical Engineering graduate from Institut Teknologi Bandung (ITB), experienced as ex-IoT Project Manager at CAD-IT Consultants and ex-product analyst at Ruangguru.
+                    <br/>I am an Electrical Engineering graduate from Institut Teknologi Bandung (ITB), experienced as IoT Project Manager at CAD-IT Consultants and product analyst at Ruangguru.
                     <br/><b>“ Offering creative IT solutions to solve business problems is what I do best. ”</b>
                     <br/><button className = 'cta-button'>Get to know me!</button>
                 </div>

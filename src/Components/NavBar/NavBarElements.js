@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 70px;
   display: flex;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 9999;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
