@@ -1,0 +1,48 @@
+.container {
+    justify-content: space-between;
+}
+
+.home-container{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.home-logo{
+    display: flex;
+    font-size: 100px;
+    padding-right: 50px;
+}
+
+.home-logo img{
+    margin: 20px 0px;
+}
+
+.home-description{
+    align-content: center;
+    width: 30vw;
+}
+
+.cta-button {
+    transition-duration: 0.2s;
+    padding: 10px;
+    border: 3px solid white; 
+    color: white;
+    background-color: black;
+    margin: 20px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+  
+.cta-button:hover {
+background-color: white;
+color: black;
+}

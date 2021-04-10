@@ -1,5 +1,7 @@
 import React from 'react';
 import NavBar from './components/NavBar';
+import SocialBar from './components/SocialBar';
+import './index.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './pages/Shard';
 import Projects from './pages/Shard/Projects';
@@ -11,6 +13,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar/>
+        <SocialBar/>
         <Switch>
           <Route path='/shard/' exact component={Home}/>
           <Route path='/shard/projects' exact component={Projects}/>
@@ -18,6 +21,7 @@ function App() {
           <Route path='/shard/about' exact component={About}/>
         </Switch>
       </Router>
+
     </div>
   );
 }

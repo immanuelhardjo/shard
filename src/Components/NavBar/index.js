@@ -16,7 +16,6 @@ const Navbar = () => {
       <Nav>
         <NavLink to='/shard/'>
           <img src={logo} alt='Logo' height = '30px' />
-          <h1>Shard</h1>
         </NavLink>
         <Bars />
         <NavMenu>
