@@ -21,7 +21,6 @@ function App() {
           <Route path='/shard/about' exact component={About}/>
         </Switch>
       </Router>
-
     </div>
   );
 }
