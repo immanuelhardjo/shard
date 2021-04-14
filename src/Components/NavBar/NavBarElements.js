@@ -3,29 +3,44 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  height: 70px;
   display: flex;
   z-index:10;
-  position: relative;
+  position: absolute;
   justify-content: space-between;
   /* Third Nav */
   /* justify-content: flex-start; */
+`;
+
+export const NavHome = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;100% 0.1em;
+  }
 `;
 
 export const NavLink = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  text-decoration:none;
+  background-image: linear-gradient(white, white);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
   &.active {
-    font-weight: bold;
-    text-decoration: underline;
+    background-size: 100% 0.1em;
+    font-size:1.2rem;
   }
   &:hover {
-    text-decoration: underline;
+    background-size: 100% 0.1em;
   }
 `;
 

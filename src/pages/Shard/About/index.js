@@ -7,10 +7,7 @@ const index = () => {
     return (
         <div>
             <div className = 'about-description'>
-                <b>Hi there, I'm Hardjo.</b>
-                <br/>I am an Electrical Engineering graduate from Institut Teknologi Bandung (ITB), experienced as IoT Project Manager at CAD-IT Consultants and product analyst at Ruangguru.
-                <br/><b>“ Offering creative IT solutions to solve business problems is what I do best. ”</b>
-                <br/>
+                I am an aspiring innovator. Currently looking for work in IT Consulting and Management Consulting.
             </div>
             <VerticalTimeline>
                 <VerticalTimelineElement
@@ -29,15 +26,15 @@ const index = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2010 - 2011"
+                    date="Oct'20"
                     contentStyle={{ background: 'black', color: 'black' }}
                     iconStyle={{ background: 'black', color: '#fff' }}
                     // icon={<WorkIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                    <h3 className="vertical-timeline-element-title">Bachelor of Science</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Institut Teknologi Bandung</h4>
                     <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                    Majoring in electrical engineering.
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -47,8 +44,8 @@ const index = () => {
                     iconStyle={{ background: 'black', color: '#fff' }}
                     // icon={<WorkIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+                    <h3 className="vertical-timeline-element-title">Product Analyst Intern</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Ruangguru</h4>
                     <p>
                     User Experience, Visual Design
                     </p>
@@ -60,8 +57,8 @@ const index = () => {
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     // icon={<WorkIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                    <h3 className="vertical-timeline-element-title">Quality Control Intern</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Ruangguru</h4>
                     <p>
                     User Experience, Visual Design
                     </p>

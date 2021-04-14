@@ -3,26 +3,26 @@ import logo from '../../assets/img/icon_logo.svg';
 
 import {
   Nav,
-  NavLink,
-  Bars,
-  NavMenu,
-  NavBtn,
-  NavBtnLink
+  NavHome,
+  // NavLink,
+  // Bars,
+  // NavMenu
 } from './NavBarElements';
 
 const Navbar = () => {
   return (
     <>
-      <Nav>
-        <NavLink to='/shard/'>
+    <div className='NavBar' style={{margin: "1rem"}}>
+    <Nav>
+        <NavHome to='/shard/'>
           <img src={logo} alt='Logo' height = '30px' />
-        </NavLink>
-        <Bars />
+        </NavHome>
+        {/* <Bars />
         <NavMenu>
           <NavLink to='/shard/projects' activeStyle>
             Projects
           </NavLink>
-          /
+          / 
           <NavLink to='/shard/stories' activeStyle>
             Stories
           </NavLink>
@@ -30,8 +30,9 @@ const Navbar = () => {
           <NavLink to='/shard/about' activeStyle>
             About
           </NavLink>
-        </NavMenu>
+        </NavMenu> */}
       </Nav>
+    </div>
     </>
   );
 };

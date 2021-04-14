@@ -8,14 +8,14 @@ import {
 
 const index = () => {
     return (
-        <div class="social-container">
+        <div id="social-container">
             <a href="https://www.linkedin.com/in/immanuel-hardjo"
                 className="linkedin-social">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faLinkedin} size="2x" style={{color: 'black'}}/>
             </a>
             <a href="https://www.instagram.com/immanuelhardjo"
                 className="instagram-social">
-                <FontAwesomeIcon icon={faInstagram} size="2x" />
+                <FontAwesomeIcon icon={faInstagram} size="2x" style={{color: 'black'}}/>
             </a>
         </div>
     )
