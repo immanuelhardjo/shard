@@ -10,6 +10,7 @@ li {
 
 .background-container{
     position: fixed;
+    z-index: -1;
     top: 0;
     left: 0;
     right: 0;
@@ -23,19 +24,20 @@ li {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 50vw;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
 #head-logo{
-    width: 50%;
-    padding: 10px;
+    padding: 0 10px;
+    max-width: 25vw;
+    margin:auto;
 }
 
 #head-description{
     font-size: 1.2rem;
+    max-width: 25vw;
     margin: auto;
-    width: 50%;
 }
 
 .story-container{
@@ -44,20 +46,21 @@ li {
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: hidden;
-    width: 80vw;
-    height: 100vh;
+    width: 70vw;
+    min-height: 100vh;
 }
 
 #story-img{
-    height: 100%;
     padding: 1rem;
     border-radius: 30%;
+    max-height: 70vh;
+    margin: auto;
 }
 
 #story-description{
     font-size: 1.2rem;
     margin: auto;
-    width: 50%;
+    max-width: 35vw;
 }
 
 hr{
@@ -69,14 +72,31 @@ hr{
 }
 
 @media screen and (max-width: 768px) {
-    .home-logo{
-        width: 100%;
+    .head-container{
+        min-height: auto;
+        margin: auto;
+    }
+    
+    #head-logo{
+        max-width: 50vw;
+        padding: 10px;
+        height: 30vh;
+    }
+
+    #head-description{
+        align-content: center;
+        max-width: 50vw;
+    }
+
+    #story-img{
+        max-width: 70vw;
         padding: 10px;
     }
 
-    .home-description{
+    #story-description{
         align-content: center;
-        width: 100%;
+        max-width: 70vw;
+        margin-bottom: 10vh;
     }
 }
 

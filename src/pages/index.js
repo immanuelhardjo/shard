@@ -1,7 +1,7 @@
 import React from 'react'
 import './home.css';
-import logo from '../../assets/img/logo.svg';
-import self_img from '../../assets/img/dumbo.JPG';
+import logo from '../assets/img/logo.svg';
+import self_img from '../assets/img/dumbo.JPG';
 import Particles from 'react-particles-js';
 // import { Route } from 'react-router';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -78,7 +78,7 @@ const index = () => {
                     
                     <VerticalTimelineElement
                         id="vertical-timeline-element"
-                        date="Aug'16 - Oct'20"
+                        date="Aug‘16 - Oct'20"
                         contentStyle={{ background: 'white'}}
                         iconStyle={{ background: 'black'}}
                         icon={<MdSchool/>}
@@ -116,7 +116,7 @@ const index = () => {
 
                     <VerticalTimelineElement
                         id="vertical-timeline-element"
-                        date="2008 - 2010"
+                        date="May'19 - Aug'19"
                         contentStyle={{ background: 'white'}}
                         iconStyle={{ background: 'black'}}
                         icon={<MdWork/>}
@@ -135,7 +135,7 @@ const index = () => {
 
                     <VerticalTimelineElement
                         id="vertical-timeline-element"
-                        date="2006 - 2008"
+                        date="Jun'18 - Aug'18"
                         contentStyle={{ background: 'white'}}
                         iconStyle={{ background: 'black'}}
                         icon={<MdWork/>}

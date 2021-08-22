@@ -3,10 +3,10 @@ import NavBar from './components/NavBar';
 import SocialBar from './components/SocialBar';
 import './index.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './pages/Shard';
-import Projects from './pages/Shard/Projects';
-import Stories from './pages/Shard/Stories';
-import About from './pages/Shard/About';
+import Home from './pages';
+import Projects from './pages/Projects';
+import Stories from './pages/Stories';
+import About from './pages/About';
 
 function App() {
   return (
@@ -15,10 +15,10 @@ function App() {
         <NavBar/>
         <SocialBar/>
         <Switch>
-          <Route path='/shard/' exact component={Home}/>
-          <Route path='/shard/projects' exact component={Projects}/>
-          <Route path='/shard/stories' exact component={Stories}/>
-          <Route path='/shard/about' exact component={About}/>
+          <Route path='/' exact component={Home}/>
+          <Route path='/projects' exact component={Projects}/>
+          <Route path='/stories' exact component={Stories}/>
+          <Route path='/about' exact component={About}/>
         </Switch>
       </Router>
     </div>

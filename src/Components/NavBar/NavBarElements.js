@@ -7,6 +7,7 @@ export const Nav = styled.nav`
   z-index:10;
   position: absolute;
   justify-content: space-between;
+  align-items: center;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
@@ -17,10 +18,10 @@ export const NavHome = styled(Link)`
   align-items: center;
   padding: 0 1rem;
   height: 100%;
-  cursor: pointer;100% 0.1em;
+  cursor: pointer;
   }
 `;
-
+ 
 export const NavLink = styled(Link)`
   color: #fff;
   display: flex;
